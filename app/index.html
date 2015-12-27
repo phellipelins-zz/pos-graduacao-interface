@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Pós-Graduação - Front End</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <main id="wrap">
+      <header id="header">
+        <div class="container">
+          <a href="#" title="Ir para Página Principal">
+            <img src="images/logo.png" alt="Centro Universitário de João Pessoa" id="logo-header">
+          </a>
+          <h1>Turma de Pós-Graduação em <br>Desenvolvimento Web (2015)</h1>
+          <div id="user-area">
+            <nav>
+              <ul>
+                <li><a href="#">Arquivos</a></li>
+                <li><a href="#">Mensagens</a></li>
+                <li><a href="#">Outra coisa</a></li>
+              </ul>
+            </nav>
+            <picture>
+              <img src="images/shilhouette.png" alt="{{user-name}}">
+              <span class="caption">
+                <i class="fa fa-camera"></i> Alterar Foto
+              </span>
+            </picture>
+          </div>
+        </div>
+      </header>
+
+      <section id="content">
+
+        <header id="content-header" class="parallax" data-speed="2">
+          <div class="container">
+            <h1>Cadastrar Usuário</h1>
+            <nav id="breadcrumb">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cadastrar Usuário</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <div class="container">
+          <form action="" id="default-form" class="row">
+            <fieldset class="col-md-4">
+              <h2>Dados Pessoais</h2>
+              <div class="form-group">
+                <label for="">Nome</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Login</label>
+                <input type="text" class="form-control" required="required">
+              </div>
+              <div class="form-group">
+                <label for="">E-mail</label>
+                <input type="text" class="form-control" placeholder="E-mail">
+              </div>
+              <div class="form-group">
+                <label for="">Telefone</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Website</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Descrição</label>
+                <textarea rows="7" maxlength="140" class="form-control"></textarea>
+              </div>
+            </fieldset>
+            <fieldset class="col-md-4">
+              <h2>Configurações Especiais</h2>
+              <div class="form-group">
+                <label for="">Itens por lista na index</label>
+                <input type="number" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Situação atual do seu tempo</label>
+                <input type="rage" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Cor da área adminstrativa</label>
+                <input type="color" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Algum campo pra testar um pattern</label>
+                <input type="text" class="form-control">
+              </div>
+            </fieldset>
+            <fieldset class="col-md-4">
+              <h2>Foto</h2>
+              <div class="form-group">
+                <label for="">Upload de Imagem</label>
+                <input type="file" class="form-control">
+              </div>
+            </fieldset>
+            <div class="col-md-12">
+              <div class="form-group text-right">
+                <button type="submit" class="btn btn-primary btn-lg">Cadastrar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </section>
+
+      <footer id="footer">
+        <p id="copyright" class="text-center"> &copy; Phellipe Lins 2015 - Todos os direitos reservados.</p>
+      </footer>
+    </main>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

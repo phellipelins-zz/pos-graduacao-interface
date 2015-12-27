@@ -1,0 +1,246 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$blue: #002d82;
+$yellow: #fed000;
+$gray: #a2a2a2;
+$text: #575757;
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+main#wrap {
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+}
+
+header#header {
+  width: 100%;
+  height: 140px;
+  background-image: url("../images/header-gradient.png");
+  background-repeat: repeat-x;
+
+  @media (max-width: 768px) {
+    background-image: linear-gradient(to bottom, transparent, transparent, transparent, transparent, rgba(0, 0, 0, 0.1));
+    border-bottom: 8px solid #FFFFFF;
+    height: auto;
+  }
+  
+  img#logo-header {
+    float: left;
+    margin: 30px 0;
+  }
+
+  h1 {
+    float: left;
+    font-size: 25px;
+    margin-top: 38px;
+    margin-left: 30px;
+    color: $text;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      text-align: center;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  div#user-area {
+    float: right;
+    padding: 18px 0;
+
+    nav {
+      float: left;
+      padding-top: 13px;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 20px;
+        width: 100%;
+
+        li {
+          display: block;
+          text-align: right;
+
+          a {
+            display: inline-block;
+            width: 100%;
+            line-height: 24px;
+            color: $blue;
+            transition: .2s;
+
+            &:hover, &:focus {
+              text-decoration: none;
+              color: $yellow;
+            }
+          }
+        }
+      }
+    }
+
+    picture {
+      float: right;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+
+      &:hover span.caption {
+        opacity: 1;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      span.caption {
+        transition: opacity .3s;
+        opacity: 0;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        z-index: 100;
+        bottom: 35px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #FFFFFF;
+        font-size: 12px;
+        padding: 5px 0;
+
+        i {
+        }
+      }
+    }
+  }
+}
+
+section#content {
+  padding-bottom: 150px;
+
+  @media (max-width: 768px) {
+    padding-bottom: 100px;
+  }
+
+  header#content-header {
+    background-image: url("../images/header-bg.png");
+    position: relative;
+    height: 240px;
+    background-position: 50% 0;
+    background-size: cover;
+    background-attachment: fixed;
+
+    div.container {
+      position: relative;
+      height: 100%;
+    }
+
+    h1 {
+      float: left;
+      margin-top: 50px;
+      color: #FFFFFF;
+    }
+
+    nav#breadcrumb {
+      position: absolute;
+      right: 0;
+      bottom: 15px;
+
+      ul {
+        list-style: none;
+
+        li {
+          display: inline-block;
+
+          &:last-child a {
+            color: $yellow;
+
+            &:before {
+              display: none;
+            }
+          }
+
+          a {
+            color: #FFFFFF;
+            font-size: 16px;
+            padding: 0 15px;
+            position: relative;
+
+            &:hover, &:focus {
+              text-decoration: none;
+            }
+
+            &:before {
+              content: ">";
+              display: block;
+              color: #FFFFFF;
+              position: absolute;
+              right: -3px;
+              top: calc(50% - 10px);
+              top: -webkit-calc(50% - 10px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  form#default-form {
+    margin-top: 50px;
+
+    fieldset {
+
+      h2 {
+        color: $gray;
+        margin-bottom: 25px;
+      }
+
+      label {
+        color: $text;
+      }
+
+      input, textarea {   
+        border-radius: 0;
+        background-color: $blue;
+        color: #FFFFFF;
+      }
+    }
+
+    button[type="submit"] {
+      border-radius: 0;
+      background-color: $blue;
+      color: $yellow;
+    }
+  }
+}
+
+footer#footer {
+  width: 100%;
+  background-color: $blue;
+
+  @media (min-width: 769px) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  p#copyright {
+    margin: 0;
+    padding: 15px 0;
+    color: #FFFFFF;
+  }
+}
